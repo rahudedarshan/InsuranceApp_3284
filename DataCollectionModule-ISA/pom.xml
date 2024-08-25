@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nd</groupId>
-	<artifactId>ApplicationRegistrationModule-ISA</artifactId>
+	<artifactId>DataCollectionModule-ISA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ApplicationRegistrationModule-ISA</name>
+	<name>ApplicationRegistrationModule-ISA-1</name>
 	<description>SSA-RestWebService-API</description>
 	<url/>
 	<licenses>
@@ -58,21 +58,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
-		<dependency>
-		    <groupId>org.springdoc</groupId>
-		    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-		    <version>2.5.0</version>
-		</dependency>
-		<dependency>
-			<groupId>io.projectreactor</groupId>
-			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

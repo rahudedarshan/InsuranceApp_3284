@@ -20,10 +20,8 @@ public class CitizenApplicationRegistrationController {
 	private ICitizenApplicationRegistrationService regService;
 
 	@PostMapping("/save")
-	public ResponseEntity<String> saveCitizenApplication(@RequestBody CitizenAppRegistrationInput inputs) throws SSNInputException{
+	public ResponseEntity<String> saveCitizenApplication(@RequestBody CitizenAppRegistrationInput inputs) throws Exception {
 		
-		try {
-			
 			int appId  = regService.registerCitizenApplication(inputs);
 			
 			if(appId>0) {
@@ -32,9 +30,6 @@ public class CitizenApplicationRegistrationController {
 				return new ResponseEntity<String>("Invalid SSN or Bad State",HttpStatus.CREATED);
 			}
 			
-
-		}catch (Exception e) {
-			return new ResponseEntity<String>(e.getMessage(),HttpStatus.BAD_REQUEST);
 	}
   }
-}
+
