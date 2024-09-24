@@ -1,0 +1,20 @@
+ 
+ -- App registration -- 
+ select * from CITIZEN_APPLICATION;
+ 
+ -- Data Collection --
+ select * from DC_CASES; 
+ select * from PLAN_DETAILS;
+ select * from DC_INCOME;
+ select * from DC_EDUCATION;
+ select * from DC_CHILDERN;
+ 
+  -- Admin API --
+ select *from ELIGIBILITY_DETAILS;
+ select * from CO_TRIGGERS;
+ 
+ --Admin API --
+ select * from PLAN_MASTER;
+ select * from PLAN_CATEGORY;
+ 
+
